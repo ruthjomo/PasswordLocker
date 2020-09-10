@@ -41,28 +41,14 @@ credentials_list = []
 
     @classmethod
     def find_by_account(cls, account):
-        '''
-        Method that takes in an account and returns credentials that matches that account.
-        Args:
-            account: account to search for
-        Returns:
-            credentials of account that matches the account.
-        '''
-
-        for Credentials in cls.credentials_list:
+       
+for Credentials in cls.credentials_list:
             if Credentials.account == account:
                 return Credentials
 
     @classmethod
     def credentials_exist(cls, account):
-        ''' 
-        Method that checks if an acount credential exists from the credentials list.
-        Args:
-            account: account to search if it exists
-        Returns:
-            Boolean: True or False depending on if the credentials exists
-        '''
-
+        
         for Credentials in cls.credentials_list:
             if Credentials.account == account:
                 return True
@@ -72,20 +58,13 @@ credentials_list = []
     @classmethod
     def display_credentials(cls):
          
-        '''
-        method that returns the credentials list
-        '''
-
+       
         return cls.credentials_list
 
     @classmethod
     def copy_password(cls, account):
         
-        '''
-        method that copies credential details after the account name is entered.
-        '''
-
-        Credentials_found = Credentials.find_by_account(account)
-        pyperclip.copy(Credentials_found.password)
+    Credentials_found = Credentials.find_by_account(account)
+    pyperclip.copy(Credentials_found.password)
 
         
