@@ -1,6 +1,6 @@
 import unittest
-from lock import User
-from lock import Credentials
+from locker import User
+from locker import Credentials
 import pyperclip
 
 class TestUsers(unittest.TestCase):
