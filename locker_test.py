@@ -28,7 +28,7 @@ class TestUsers(unittest.TestCase):
         Set up method to run before each test cases.
 
         '''
-        self.new_user = User("Kelvin", "Kelvin78") # create user object
+        self.new_user = User("Ruth", "Ruth78") # create user object
 
 
     def test_init(self):
@@ -38,8 +38,8 @@ class TestUsers(unittest.TestCase):
 
         '''
 
-        self.assertEqual(self.new_user.user_name, "Kelvin")
-        self.assertEqual(self.new_user.password, "Kelvin78")
+        self.assertEqual(self.new_user.user_name, "Ruth")
+        self.assertEqual(self.new_user.password, "Ruth78")
 
     def test_create_account(self):
 
@@ -61,7 +61,7 @@ class TestUsers(unittest.TestCase):
         '''
 
         self.new_user.create_account()
-        test_user = User("Amimo", "Amimo78") #new user
+        test_user = User("Kendrick", "Kendrick78") #new user
         test_user.create_account()
         self.assertEqual(len(User.users_list), 2)
 
@@ -73,10 +73,10 @@ class TestUsers(unittest.TestCase):
         '''
 
         self.new_user.create_account()
-        test_user = User("Amimo", "Amimo78")
+        test_user = User("Kendrick", "Kendrick78")
         test_user.create_account()
 
-        user_exists = User.user_exist("Amimo", "Amimo78")
+        user_exists = User.user_exist("Kendrick", "Kendrick78")
 
         self.assertTrue(user_exists)
 
