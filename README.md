@@ -16,9 +16,5 @@ Please make sure to update tests as appropriate.
 ## Author and acknowledgment
 I would like to acknowledge the help and guidance of my Technical Mentor (TM) [CynthiaKasambuli] in the creation of this project.
 
-
-
 Released under MIT License
 Copyright (c) 2020 Ruth Jomo.
-
-MIT
