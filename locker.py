@@ -1,4 +1,4 @@
-# First Class
+
 import pyperclip
 
 class User:
