@@ -192,7 +192,7 @@ def main():
 
                 elif short_code == 'fc':
 
-                    print('Enter the number you want to search for')
+                    print('Enter the account you want to search for')
 
                     search_account = input()
                     if check_existing_credentials(search_account):
