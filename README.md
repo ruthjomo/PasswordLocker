@@ -1,3 +1,6 @@
+## PasswordLocker App
+## Ruth Jomo
+
 ## Description
 Password Locker is a python application run in the terminal that allows users to store details such as usernames and passwords for various accounts.
 
