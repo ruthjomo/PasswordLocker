@@ -98,7 +98,7 @@ class TestCredentials(unittest.TestCase):
         '''
         Set up method to run before each test cases.
         '''
-        self.new_credentials = Credentials("Instagram","NyururuKelvin","newpassword") # create credentials object
+        self.new_credentials = Credentials("Instagram","RupyMarloney","newpassword") # create credentials object
 
     def test_init(self):
 
@@ -107,7 +107,7 @@ class TestCredentials(unittest.TestCase):
         '''
 
         self.assertEqual(self.new_credentials.account,"Instagram")
-        self.assertEqual(self.new_credentials.username,"NyururuKelvin")
+        self.assertEqual(self.new_credentials.username,"RupyMarloney")
         self.assertEqual(self.new_credentials.password,"newpassword")
 
     def test_save_credentials(self):
